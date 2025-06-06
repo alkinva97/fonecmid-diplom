@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:ChartOfCalculationTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="769d87a9-6949-4814-9067-105714b96386">
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="769d87a9-6949-4814-9067-105714b96386">
   <producedTypes>
     <objectType typeId="c8bf347c-163c-45c3-bfab-837c94620806" valueTypeId="df69a108-2367-4353-8b52-be5653f67e42"/>
     <refType typeId="3e00e2bb-9b37-4ecb-8a77-824510e4e38b" valueTypeId="59f97273-6d34-4fca-8e7b-0e205d6e296b"/>
@@ -36,4 +36,20 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <predefined>
+    <items id="e3165c03-a714-4b74-b35e-80cd3ff692f6">
+      <name>Надбавка</name>
+      <description>Надбавка</description>
+      <code xsi:type="core:StringValue">
+        <value>1</value>
+      </code>
+    </items>
+    <items id="f171b805-25f6-4b3e-a732-89f95fe09b58">
+      <name>ФиксПремия</name>
+      <description>Фиксированная перемия</description>
+      <code xsi:type="core:StringValue">
+        <value>2</value>
+      </code>
+    </items>
+  </predefined>
 </mdclass:ChartOfCalculationTypes>

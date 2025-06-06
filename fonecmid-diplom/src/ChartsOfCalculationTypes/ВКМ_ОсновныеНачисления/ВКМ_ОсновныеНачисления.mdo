@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:ChartOfCalculationTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c5d6eb4-1b7e-4adc-9c52-be166ce926b2">
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c5d6eb4-1b7e-4adc-9c52-be166ce926b2">
   <producedTypes>
     <objectType typeId="9d44129b-c4bb-46bc-b724-6a3c32c78614" valueTypeId="930c7e20-25aa-4e79-953b-b8810be510e7"/>
     <refType typeId="0db3a1f6-4420-49e2-b65e-b0da31e6621f" valueTypeId="3d3852bc-51aa-4c1b-9e1d-e8d61a32d34e"/>
@@ -40,4 +40,24 @@
   <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
   <actionPeriodUse>true</actionPeriodUse>
+  <predefined>
+    <items id="229b781b-70be-463e-bb4a-d2d972d2e56b">
+      <name>Оклад</name>
+      <description>Оклад</description>
+      <code xsi:type="core:StringValue">
+        <value>1</value>
+      </code>
+      <displaced>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</displaced>
+    </items>
+    <items id="69f527df-7576-4f96-ab37-7ae0e6996d9f">
+      <name>Отпуск</name>
+      <description>Отпуск</description>
+      <code xsi:type="core:StringValue">
+        <value>2</value>
+      </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Надбавка</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.ФиксПремия</base>
+    </items>
+  </predefined>
 </mdclass:ChartOfCalculationTypes>

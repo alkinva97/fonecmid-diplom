@@ -16,6 +16,11 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <periodicity>Month</periodicity>
+  <actionPeriod>true</actionPeriod>
+  <basePeriod>true</basePeriod>
+  <schedule>InformationRegister.ВКМ_РежимРаботы</schedule>
+  <scheduleValue>InformationRegister.ВКМ_РежимРаботы.Resource.Значение</scheduleValue>
+  <scheduleDate>InformationRegister.ВКМ_РежимРаботы.Dimension.Дата</scheduleDate>
   <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</chartOfCalculationTypes>
   <dataLockControlMode>Managed</dataLockControlMode>
   <resources uuid="d2cecbf0-9251-4359-a92a-b9fe27576860">
@@ -29,6 +34,22 @@
       <numberQualifiers>
         <precision>15</precision>
         <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="a5c1d16e-b66c-4525-92f7-cc33b51474f4">
+    <name>РабочихДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочих дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -51,6 +72,20 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="6c68f472-ac45-4ceb-a32f-f9c334016bd5">
+    <name>График</name>
+    <synonym>
+      <key>ru</key>
+      <value>График</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <scheduleLink>InformationRegister.ВКМ_РежимРаботы.Dimension.ГрафикРаботы</scheduleLink>
   </attributes>
   <dimensions uuid="20c7d169-0eee-461d-ba06-7bb86ef5e0c3">
     <name>Сотрудник</name>

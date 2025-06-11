@@ -26,6 +26,12 @@
       </visible>
     </visibilityFragments>
     <visibilityFragments>
+      <command>Document.ВКМ_ГрафикОтпусков.StandardCommand.OpenList</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+    <visibilityFragments>
       <command>InformationRegister.ВКМ_РежимРаботы.StandardCommand.OpenList</command>
       <visible>
         <common>true</common>
@@ -39,15 +45,11 @@
     </visibilityFragments>
     <visibilityFragments>
       <command>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы.StandardCommand.OpenList</command>
-      <visible>
-        <common>true</common>
-      </visible>
+      <visible/>
     </visibilityFragments>
     <visibilityFragments>
       <command>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками.StandardCommand.OpenList</command>
-      <visible>
-        <common>true</common>
-      </visible>
+      <visible/>
     </visibilityFragments>
     <visibilityFragments>
       <command>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardCommand.OpenList</command>
@@ -74,6 +76,18 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
+      <command>Document.ВКМ_ВыплатаЗарплаты.StandardCommand.Create</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.ВКМ_ГрафикОтпусков.StandardCommand.Create</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+    <visibilityFragments>
       <command>Document.ВКМ_НачислениеЗаработнойПлаты.StandardCommand.Create</command>
       <visible>
         <common>true</common>
@@ -96,6 +110,7 @@
       <commands>Document.ВКМ_НачислениеЗаработнойПлаты.StandardCommand.OpenList</commands>
       <commands>Document.ВКМ_НачислениеФиксированныхПремий.StandardCommand.OpenList</commands>
       <commands>Document.ВКМ_ВыплатаЗарплаты.StandardCommand.OpenList</commands>
+      <commands>Document.ВКМ_ГрафикОтпусков.StandardCommand.OpenList</commands>
     </placementFragments>
     <placementFragments>
       <group>CommandGroup.Прочие</group>
@@ -121,6 +136,7 @@
       <commands>Document.ВКМ_НачислениеЗаработнойПлаты.StandardCommand.OpenList</commands>
       <commands>Document.ВКМ_НачислениеФиксированныхПремий.StandardCommand.OpenList</commands>
       <commands>Document.ВКМ_ВыплатаЗарплаты.StandardCommand.OpenList</commands>
+      <commands>Document.ВКМ_ГрафикОтпусков.StandardCommand.OpenList</commands>
     </orderFragments>
     <orderFragments>
       <group>CommandGroup.Прочие</group>

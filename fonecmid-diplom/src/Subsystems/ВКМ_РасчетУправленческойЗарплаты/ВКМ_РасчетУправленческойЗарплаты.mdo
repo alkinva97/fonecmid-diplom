@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="506480c6-9d91-4031-a47c-6e1cf1d7db14">
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="506480c6-9d91-4031-a47c-6e1cf1d7db14">
   <name>ВКМ_РасчетУправленческойЗарплаты</name>
   <synonym>
     <key>ru</key>
-    <value>Расчет управленческой зарплаты (ВКМ)</value>
+    <value>Расчет управленческой зарплаты</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ВКМ_Финансы</picture>
+  </picture>
   <content>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</content>
   <content>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</content>
   <content>ChartOfCalculationTypes.ВКМ_Удержания</content>
@@ -22,4 +25,10 @@
   <content>Catalog.ВКМ_ГрафикиРаботы</content>
   <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
   <content>Document.ВКМ_ВыплатаЗарплаты</content>
+  <content>Document.ВКМ_ГрафикОтпусков</content>
+  <content>Report.ВКМ_ВыработкаСпециалистов</content>
+  <content>Report.ВКМ_РасчетыССотрудниками</content>
+  <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
+  <content>CommonPicture.ВКМ_Финансы</content>
+  <content>AccumulationRegister.ВКМ_ОтпускаСотрудников</content>
 </mdclass:Subsystem>

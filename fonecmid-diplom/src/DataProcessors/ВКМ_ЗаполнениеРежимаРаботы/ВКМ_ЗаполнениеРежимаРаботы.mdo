@@ -7,7 +7,7 @@
   <name>ВКМ_ЗаполнениеРежимаРаботы</name>
   <synonym>
     <key>ru</key>
-    <value>Заполнение режима работы (ВКМ)</value>
+    <value>Заполнение режима работы</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.ВКМ_ЗаполнениеРежимаРаботы.Form.Форма</defaultForm>

@@ -10,7 +10,7 @@
   <name>ВКМ_ВыплатаЗарплаты</name>
   <synonym>
     <key>ru</key>
-    <value>Выплата зарплаты (ВКМ)</value>
+    <value>Выплата зарплаты</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.ВКМ_ВыплатаЗарплаты.StandardAttribute.Number</inputByString>
@@ -20,7 +20,7 @@
   <fullTextSearch>Use</fullTextSearch>
   <listPresentation>
     <key>ru</key>
-    <value>Выплаты зарплаты (ВКМ)</value>
+    <value>Выплаты зарплаты</value>
   </listPresentation>
   <numberType>String</numberType>
   <numberLength>9</numberLength>

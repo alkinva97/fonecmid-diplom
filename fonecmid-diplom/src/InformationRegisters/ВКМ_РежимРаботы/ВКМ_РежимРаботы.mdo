@@ -12,14 +12,14 @@
   <name>ВКМ_РежимРаботы</name>
   <synonym>
     <key>ru</key>
-    <value>Режим работы (ВКМ)</value>
+    <value>Режим работы</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <dataLockControlMode>Managed</dataLockControlMode>
   <recordPresentation>
     <key>ru</key>
-    <value>Режим работы (ВКМ)</value>
+    <value>Режим работы</value>
   </recordPresentation>
   <resources uuid="3b7f0a0b-36f1-4358-a9a2-283f63f31c06">
     <name>Значение</name>

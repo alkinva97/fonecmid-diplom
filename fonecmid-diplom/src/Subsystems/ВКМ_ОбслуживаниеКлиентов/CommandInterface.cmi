@@ -33,9 +33,7 @@
     </visibilityFragments>
     <visibilityFragments>
       <command>AccumulationRegister.ВКМ_ВыполненыеКлиентуРаботы.StandardCommand.OpenList</command>
-      <visible>
-        <common>true</common>
-      </visible>
+      <visible/>
     </visibilityFragments>
     <visibilityFragments>
       <command>Catalog.ДоговорыКонтрагентов.StandardCommand.Create</command>
@@ -54,6 +52,10 @@
       <visible>
         <common>true</common>
       </visible>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.ВКМ_КалендарьСпециалистов.StandardCommand.Open</command>
+      <visible/>
     </visibilityFragments>
   </commandsVisibility>
   <commandsPlacement>

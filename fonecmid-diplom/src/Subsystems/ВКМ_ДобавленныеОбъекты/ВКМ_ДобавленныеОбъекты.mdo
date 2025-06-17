@@ -3,7 +3,7 @@
   <name>ВКМ_ДобавленныеОбъекты</name>
   <synonym>
     <key>ru</key>
-    <value>Добавленные объекты (ВКМ)</value>
+    <value>Добавленные объекты</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <content>Document.ВКМ_ОбслуживаниеКлиента</content>
@@ -49,4 +49,5 @@
   <content>CommonPicture.ВКМ_Финансы</content>
   <content>CommonPicture.ВКМ_Пользователь</content>
   <content>AccumulationRegister.ВКМ_ОтпускаСотрудников</content>
+  <content>AccumulationRegister.ВКМ_ОказанныеУслуги</content>
 </mdclass:Subsystem>

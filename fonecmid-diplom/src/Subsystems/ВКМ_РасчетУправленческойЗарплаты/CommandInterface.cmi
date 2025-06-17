@@ -151,5 +151,11 @@
       <commands>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardCommand.OpenList</commands>
       <commands>CalculationRegister.ВКМ_Удержания.StandardCommand.OpenList</commands>
     </orderFragments>
+    <orderFragments>
+      <group>ActionsPanelReports</group>
+      <commands>Report.ВКМ_ВыработкаСпециалистов.StandardCommand.Open</commands>
+      <commands>Report.ВКМ_РасчетыССотрудниками.StandardCommand.Open</commands>
+      <commands>Report.ВКМ_РасходЗапланированныхОтпусков.StandardCommand.Open</commands>
+    </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>

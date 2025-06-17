@@ -16,7 +16,7 @@
   <name>ВКМ_ДополнительныеНачисления</name>
   <synonym>
     <key>ru</key>
-    <value>Дополнительные начисления (ВКМ)</value>
+    <value>Дополнительные начисления</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.StandardAttribute.Description</inputByString>
@@ -27,7 +27,7 @@
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>Дополнительное начисление (ВКМ)</value>
+    <value>Дополнительное начисление</value>
   </objectPresentation>
   <codeLength>9</codeLength>
   <descriptionLength>40</descriptionLength>

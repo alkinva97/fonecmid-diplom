@@ -25,6 +25,7 @@
   <foldersOnTop>true</foldersOnTop>
   <codeType>String</codeType>
   <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <attributes uuid="172801ad-c2bb-49ff-8aa7-599f17b9d316">

@@ -3,7 +3,7 @@
   <name>ВКМ_Телеграм</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ телеграм</value>
+    <value>Телеграм</value>
   </synonym>
   <server>true</server>
 </mdclass:CommonModule>

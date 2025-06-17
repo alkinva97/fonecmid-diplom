@@ -3,7 +3,7 @@
   <name>ВКМ_ОтправкаСообщенийПоРасписанию</name>
   <synonym>
     <key>ru</key>
-    <value>Отправка сообщений по расписанию (ВКМ)</value>
+    <value>Отправка сообщений по расписанию</value>
   </synonym>
   <methodName>CommonModule.ВКМ_Телеграм.ОтправитьСообщение</methodName>
   <predefined>true</predefined>

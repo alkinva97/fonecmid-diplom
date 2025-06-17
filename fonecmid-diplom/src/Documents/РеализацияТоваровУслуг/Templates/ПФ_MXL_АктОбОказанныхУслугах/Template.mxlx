@@ -1538,6 +1538,10 @@
 			<endColumn>-1</endColumn>
 		</area>
 	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>ПечатьОрганизации</name>
+		<drawingID>1</drawingID>
+	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Подвал</name>
 		<area>
@@ -1547,6 +1551,14 @@
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>ПодписьЗаказчика</name>
+		<drawingID>3</drawingID>
+	</namedItem>
+	<namedItem xsi:type="NamedItemDrawing">
+		<name>ПодписьИсполнителя</name>
+		<drawingID>2</drawingID>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Услуги</name>
@@ -1832,7 +1844,7 @@
 		<font>1</font>
 	</format>
 	<format>
-		<print>false</print>
+		<print>true</print>
 		<drawingBorder>4</drawingBorder>
 		<hyperLink>false</hyperLink>
 	</format>

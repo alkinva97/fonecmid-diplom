@@ -15,9 +15,7 @@
     </visibilityFragments>
     <visibilityFragments>
       <command>Catalog.ВКМ_УведомленияТелеграмБоту.StandardCommand.OpenList</command>
-      <visible>
-        <common>true</common>
-      </visible>
+      <visible/>
     </visibilityFragments>
     <visibilityFragments>
       <command>Document.ВКМ_ОбслуживаниеКлиента.StandardCommand.OpenList</command>

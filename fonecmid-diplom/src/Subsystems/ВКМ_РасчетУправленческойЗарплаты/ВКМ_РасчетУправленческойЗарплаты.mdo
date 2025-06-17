@@ -31,4 +31,5 @@
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <content>CommonPicture.ВКМ_Финансы</content>
   <content>AccumulationRegister.ВКМ_ОтпускаСотрудников</content>
+  <content>AccumulationRegister.ВКМ_ОказанныеУслуги</content>
 </mdclass:Subsystem>

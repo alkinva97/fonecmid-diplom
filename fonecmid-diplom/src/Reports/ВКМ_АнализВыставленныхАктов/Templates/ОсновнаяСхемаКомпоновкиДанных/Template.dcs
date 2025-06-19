@@ -21,22 +21,8 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Сумма</dataPath>
-			<field>Сумма</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Услуга</dataPath>
 			<field>Услуга</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаВАкте</dataPath>
-			<field>СуммаВАкте</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма в акте</v8:content>
-				</v8:item>
-			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Номенклатура</dataPath>
@@ -48,29 +34,52 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаКОплате</dataPath>
+			<field>СуммаКОплате</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма к оплате</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФактическаяСумма</dataPath>
+			<field>ФактическаяСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фактическая сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
+	ВКМ_НоменклатураРаботыСпециалиста.Значение КАК Номенклатура,
+	ВКМ_ОказанныеУслугиОбороты.Клиент КАК Клиент,
+	ВКМ_ОказанныеУслугиОбороты.Договор КАК Договор,
+	ВКМ_ОказанныеУслугиОбороты.СуммаОборот КАК ФактическаяСумма
+ПОМЕСТИТЬ ВТ_ФактСуммаИзКонстанты
+ИЗ
+	Константа.ВКМ_НоменклатураРаботыСпециалиста КАК ВКМ_НоменклатураРаботыСпециалиста
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ВКМ_ОказанныеУслуги.Обороты(&amp;Начало, &amp;Конец, , ) КАК ВКМ_ОказанныеУслугиОбороты
+		ПО ВКМ_НоменклатураРаботыСпециалиста.Значение = ВКМ_ОказанныеУслугиОбороты.Услуга
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
 	ВКМ_ВыполненыеКлиентуРаботыОбороты.Клиент КАК Клиент,
 	ВКМ_ВыполненыеКлиентуРаботыОбороты.Договор КАК Договор,
-	ВКМ_ВыполненыеКлиентуРаботыОбороты.СуммаКОплатеОборот КАК Сумма,
-	ЕСТЬNULL(ВКМ_НоменклатураРаботыСпециалиста.Значение, "&lt;Нет работ специалиста&gt;") КАК Номенклатура,
-	ВКМ_ОказанныеУслугиОбороты.СуммаОборот КАК СуммаВАкте
+	ВКМ_ВыполненыеКлиентуРаботыОбороты.СуммаКОплатеОборот КАК СуммаКОплате,
+	ВТ_ФактСуммаИзКонстанты.Номенклатура КАК Номенклатура,
+	ВТ_ФактСуммаИзКонстанты.ФактическаяСумма КАК ФактическаяСумма
 ИЗ
-	РегистрНакопления.ВКМ_ВыполненыеКлиентуРаботы.Обороты(, , , ) КАК ВКМ_ВыполненыеКлиентуРаботыОбороты
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ВКМ_ОказанныеУслуги.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК ВКМ_ОказанныеУслугиОбороты
-			ПРАВОЕ СОЕДИНЕНИЕ Константа.ВКМ_НоменклатураРаботыСпециалиста КАК ВКМ_НоменклатураРаботыСпециалиста
-			ПО (ВКМ_НоменклатураРаботыСпециалиста.Значение = ВКМ_ОказанныеУслугиОбороты.Услуга)
-		ПО ВКМ_ВыполненыеКлиентуРаботыОбороты.Клиент = ВКМ_ОказанныеУслугиОбороты.Клиент
-			И ВКМ_ВыполненыеКлиентуРаботыОбороты.Договор = ВКМ_ОказанныеУслугиОбороты.Договор</query>
+	РегистрНакопления.ВКМ_ВыполненыеКлиентуРаботы.Обороты(&amp;Начало, &amp;Конец, , ) КАК ВКМ_ВыполненыеКлиентуРаботыОбороты
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ФактСуммаИзКонстанты КАК ВТ_ФактСуммаИзКонстанты
+		ПО ВКМ_ВыполненыеКлиентуРаботыОбороты.Клиент = ВТ_ФактСуммаИзКонстанты.Клиент
+			И ВКМ_ВыполненыеКлиентуРаботыОбороты.Договор = ВТ_ФактСуммаИзКонстанты.Договор</query>
 	</dataSet>
-	<totalField>
-		<dataPath>Сумма</dataPath>
-		<expression>Сумма(Сумма)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>СуммаВАкте</dataPath>
-		<expression>Сумма(СуммаВАкте)</expression>
-	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
 		<title xsi:type="v8:LocalStringType">
@@ -124,6 +133,42 @@
 			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 		</value>
 		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Конец</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>Начало</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
 	</parameter>
 	<template>
 		<name>Макет1</name>
@@ -184,13 +229,13 @@
 					<dcsset:field>Договор</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Сумма</dcsset:field>
+					<dcsset:field>СуммаКОплате</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Номенклатура</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаВАкте</dcsset:field>
+					<dcsset:field>ФактическаяСумма</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>

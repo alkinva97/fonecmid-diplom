@@ -27,11 +27,48 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ВКМ_НачислениеФиксированныхПремий.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ВКМ_НачислениеФиксированныхПремий.Form.ФормаСписка</defaultListForm>
   <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
   <registerRecords>CalculationRegister.ВКМ_ДополнительныеНачисления</registerRecords>
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="d3625665-431e-40e7-b547-9d6f027c8c2d">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2f56db4a-52f4-48c3-ae09-1288c32a95a4">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="249d9931-39c2-4d5f-9eb7-9e3ba52320be">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="aeb59ba1-8903-4d52-9fc8-dba907ddc737">
     <producedTypes>
       <objectType typeId="5e037621-0557-44f9-8157-aacebc4a5855" valueTypeId="9bb4b54b-a4aa-4c9c-8a26-a1accfc74732"/>

@@ -39,4 +39,6 @@
   <content>Role.ВКМ_МассовоеСозданиеДокументовРеализации</content>
   <content>Report.ВКМ_ВыработкаСпециалистов</content>
   <content>Report.ВКМ_АнализВыставленныхАктов</content>
+  <content>Role.ВКМ_РаботаСКалендаремСпециалистов</content>
+  <content>Role.ВКМ_РаботаСОтчетомВыработкаСпециалистов</content>
 </mdclass:Subsystem>

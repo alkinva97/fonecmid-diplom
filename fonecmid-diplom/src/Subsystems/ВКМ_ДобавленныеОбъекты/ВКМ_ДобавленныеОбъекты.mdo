@@ -50,4 +50,7 @@
   <content>CommonPicture.ВКМ_Пользователь</content>
   <content>AccumulationRegister.ВКМ_ОтпускаСотрудников</content>
   <content>AccumulationRegister.ВКМ_ОказанныеУслуги</content>
+  <content>Role.ВКМ_РаботаСКалендаремСпециалистов</content>
+  <content>Role.ВКМ_ПодсистемаРасчетУправленческойЗарплаты</content>
+  <content>Role.ВКМ_РаботаСОтчетомВыработкаСпециалистов</content>
 </mdclass:Subsystem>

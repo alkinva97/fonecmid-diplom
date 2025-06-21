@@ -32,4 +32,6 @@
   <content>CommonPicture.ВКМ_Финансы</content>
   <content>AccumulationRegister.ВКМ_ОтпускаСотрудников</content>
   <content>AccumulationRegister.ВКМ_ОказанныеУслуги</content>
+  <content>Role.ВКМ_ПодсистемаРасчетУправленческойЗарплаты</content>
+  <content>Role.ВКМ_РаботаСОтчетомВыработкаСпециалистов</content>
 </mdclass:Subsystem>

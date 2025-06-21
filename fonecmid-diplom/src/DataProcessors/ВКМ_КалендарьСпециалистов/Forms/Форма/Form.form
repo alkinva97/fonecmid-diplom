@@ -37,10 +37,6 @@
         <event>BeforeCreate</event>
         <name>КалендарьПередСозданием</name>
       </handlers>
-      <handlers>
-        <event>OnActivate</event>
-        <name>КалендарьПриАктивизации</name>
-      </handlers>
       <width>50</width>
       <autoMaxWidth>true</autoMaxWidth>
       <height>10</height>

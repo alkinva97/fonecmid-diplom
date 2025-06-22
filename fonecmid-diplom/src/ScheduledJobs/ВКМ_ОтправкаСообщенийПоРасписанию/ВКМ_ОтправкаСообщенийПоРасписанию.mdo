@@ -6,6 +6,7 @@
     <value>Отправка сообщений по расписанию</value>
   </synonym>
   <methodName>CommonModule.ВКМ_Телеграм.ОтправитьСообщение</methodName>
+  <use>true</use>
   <predefined>true</predefined>
   <restartCountOnFailure>3</restartCountOnFailure>
   <restartIntervalOnFailure>10</restartIntervalOnFailure>
